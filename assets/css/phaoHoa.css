@@ -1,0 +1,843 @@
+html {
+  font-size: 62.5%;
+}
+
+body,
+.atom_Bomb {
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(16deg, #02000a, #0d0012);
+  background: #000;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.artillery-fire {
+  position: absolute;
+  inset: auto 0 50px;
+  margin: auto auto 0px auto;
+  width: 2px;
+  height: 2px;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg);
+}
+
+.xuanPhao {
+  position: absolute;
+  inset: 50%;
+  z-index: 9;
+  transform-style: preserve-3d;
+  transform: rotateY(10deg);
+}
+
+.xuanPhao > span {
+  position: absolute;
+  aspect-ratio: 1;
+  width: max(var(--size), 20px);
+  filter: hue-rotate(var(--hue));
+  border-radius: var(--circle);
+  background: var(--background, url(../img/logpF8.png) no-repeat center/contain);
+  scale: 0.2;
+}
+.xuanPhao > span:nth-child(1) {
+  --offsetX: 14vw;
+  --offsetY: -22vh;
+  --offsetZ: 56px;
+  --size: 12px;
+  --hue: 19deg;
+  --circle: -14.1732252145px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(2) {
+  --offsetX: -13vw;
+  --offsetY: 0vh;
+  --offsetZ: 183px;
+  --size: 11px;
+  --hue: 148deg;
+  --circle: 8.7754218521px;
+  --whirl: 3turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(3) {
+  --offsetX: -4vw;
+  --offsetY: 21vh;
+  --offsetZ: 15px;
+  --size: 15px;
+  --hue: 188deg;
+  --circle: 2.177425784px;
+  --whirl: 10turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(4) {
+  --offsetX: -18vw;
+  --offsetY: 13vh;
+  --offsetZ: 6px;
+  --size: 14px;
+  --hue: 190deg;
+  --circle: 15.1482402647px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(5) {
+  --offsetX: -2vw;
+  --offsetY: 19vh;
+  --offsetZ: -232px;
+  --size: 16px;
+  --hue: 350deg;
+  --circle: 15.0088868351px;
+  --whirl: 7turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(6) {
+  --offsetX: 17vw;
+  --offsetY: 3vh;
+  --offsetZ: 32px;
+  --size: 55px;
+  --hue: 242deg;
+  --circle: 4.6771350442px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(7) {
+  --offsetX: 9vw;
+  --offsetY: -11vh;
+  --offsetZ: 44px;
+  --size: 22px;
+  --hue: 344deg;
+  --circle: -13.0425104272px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(8) {
+  --offsetX: 16vw;
+  --offsetY: 16vh;
+  --offsetZ: -55px;
+  --size: 50px;
+  --hue: 246deg;
+  --circle: -10.452259802px;
+  --whirl: 4turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(9) {
+  --offsetX: 1vw;
+  --offsetY: 16vh;
+  --offsetZ: 189px;
+  --size: 4px;
+  --hue: 26deg;
+  --circle: 9.8990372199px;
+  --whirl: 7turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(10) {
+  --offsetX: 11vw;
+  --offsetY: -1vh;
+  --offsetZ: -35px;
+  --size: 4px;
+  --hue: 34deg;
+  --circle: 4.5462409014px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(11) {
+  --offsetX: -18vw;
+  --offsetY: 5vh;
+  --offsetZ: -66px;
+  --size: 60px;
+  --hue: 173deg;
+  --circle: -7.0187992797px;
+  --whirl: 3turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(12) {
+  --offsetX: 7vw;
+  --offsetY: 14vh;
+  --offsetZ: -58px;
+  --size: 37px;
+  --hue: 101deg;
+  --circle: -14.3169620999px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(13) {
+  --offsetX: -15vw;
+  --offsetY: 13vh;
+  --offsetZ: 86px;
+  --size: 10px;
+  --hue: 340deg;
+  --circle: -7.6769934842px;
+  --whirl: 6turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(14) {
+  --offsetX: -16vw;
+  --offsetY: 7vh;
+  --offsetZ: -115px;
+  --size: 6px;
+  --hue: 14deg;
+  --circle: 10.5748324825px;
+  --whirl: 6turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(15) {
+  --offsetX: 0vw;
+  --offsetY: 18vh;
+  --offsetZ: -115px;
+  --size: 44px;
+  --hue: 310deg;
+  --circle: 10.0394495208px;
+  --whirl: 9turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(16) {
+  --offsetX: 13vw;
+  --offsetY: -3vh;
+  --offsetZ: -205px;
+  --size: 9px;
+  --hue: 197deg;
+  --circle: 24.1349836835px;
+  --whirl: 7turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(17) {
+  --offsetX: -16vw;
+  --offsetY: 22vh;
+  --offsetZ: 169px;
+  --size: 8px;
+  --hue: 9deg;
+  --circle: -16.2471261121px;
+  --whirl: 7turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(18) {
+  --offsetX: -4vw;
+  --offsetY: 0vh;
+  --offsetZ: -95px;
+  --size: 45px;
+  --hue: 211deg;
+  --circle: 4.5995839975px;
+  --whirl: 6turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(19) {
+  --offsetX: -16vw;
+  --offsetY: -7vh;
+  --offsetZ: -50px;
+  --size: 12px;
+  --hue: 35deg;
+  --circle: -12.8435933963px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(20) {
+  --offsetX: -12vw;
+  --offsetY: 18vh;
+  --offsetZ: 170px;
+  --size: 54px;
+  --hue: 331deg;
+  --circle: -20.8551108922px;
+  --whirl: 8turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(21) {
+  --offsetX: 5vw;
+  --offsetY: -13vh;
+  --offsetZ: 220px;
+  --size: 43px;
+  --hue: 159deg;
+  --circle: 20.2168184492px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(22) {
+  --offsetX: -2vw;
+  --offsetY: -14vh;
+  --offsetZ: 167px;
+  --size: 34px;
+  --hue: 278deg;
+  --circle: 17.9031481238px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(23) {
+  --offsetX: -14vw;
+  --offsetY: 1vh;
+  --offsetZ: -12px;
+  --size: 60px;
+  --hue: 17deg;
+  --circle: 20.5399856436px;
+  --whirl: 4turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(24) {
+  --offsetX: -16vw;
+  --offsetY: -13vh;
+  --offsetZ: -248px;
+  --size: 59px;
+  --hue: 264deg;
+  --circle: -22.456152099px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(25) {
+  --offsetX: 6vw;
+  --offsetY: 12vh;
+  --offsetZ: 123px;
+  --size: 33px;
+  --hue: 18deg;
+  --circle: 8.446305785px;
+  --whirl: 4turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(26) {
+  --offsetX: 12vw;
+  --offsetY: 11vh;
+  --offsetZ: 65px;
+  --size: 44px;
+  --hue: 57deg;
+  --circle: 4.1386202574px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(27) {
+  --offsetX: 19vw;
+  --offsetY: -8vh;
+  --offsetZ: 82px;
+  --size: 47px;
+  --hue: 152deg;
+  --circle: -26.6177584302px;
+  --whirl: 5turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(28) {
+  --offsetX: -18vw;
+  --offsetY: -14vh;
+  --offsetZ: -171px;
+  --size: 54px;
+  --hue: 59deg;
+  --circle: -26.3989536757px;
+  --whirl: 4turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(29) {
+  --offsetX: 3vw;
+  --offsetY: -23vh;
+  --offsetZ: 119px;
+  --size: 45px;
+  --hue: 278deg;
+  --circle: 1.8394088386px;
+  --whirl: 10turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(30) {
+  --offsetX: 16vw;
+  --offsetY: 10vh;
+  --offsetZ: -65px;
+  --size: 16px;
+  --hue: 96deg;
+  --circle: -21.0164727117px;
+  --whirl: 9turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(31) {
+  --offsetX: -8vw;
+  --offsetY: -20vh;
+  --offsetZ: 224px;
+  --size: 56px;
+  --hue: 197deg;
+  --circle: 14.7680056964px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(32) {
+  --offsetX: 19vw;
+  --offsetY: -11vh;
+  --offsetZ: -246px;
+  --size: 36px;
+  --hue: 135deg;
+  --circle: 8.2113319579px;
+  --whirl: 3turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(33) {
+  --offsetX: -14vw;
+  --offsetY: -3vh;
+  --offsetZ: 4px;
+  --size: 26px;
+  --hue: 110deg;
+  --circle: -11.0049143735px;
+  --whirl: 5turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(34) {
+  --offsetX: -8vw;
+  --offsetY: -11vh;
+  --offsetZ: 10px;
+  --size: 40px;
+  --hue: 83deg;
+  --circle: -17.2657968261px;
+  --whirl: 3turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(35) {
+  --offsetX: 4vw;
+  --offsetY: -23vh;
+  --offsetZ: 76px;
+  --size: 51px;
+  --hue: 151deg;
+  --circle: -27.3880740152px;
+  --whirl: 6turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(36) {
+  --offsetX: 4vw;
+  --offsetY: 17vh;
+  --offsetZ: 34px;
+  --size: 25px;
+  --hue: 50deg;
+  --circle: -4.6088636451px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(37) {
+  --offsetX: -18vw;
+  --offsetY: -2vh;
+  --offsetZ: 159px;
+  --size: 33px;
+  --hue: 4deg;
+  --circle: -20.3964927397px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(38) {
+  --offsetX: -18vw;
+  --offsetY: -3vh;
+  --offsetZ: -163px;
+  --size: 25px;
+  --hue: 188deg;
+  --circle: -28.0939584961px;
+  --whirl: 6turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(39) {
+  --offsetX: -14vw;
+  --offsetY: 21vh;
+  --offsetZ: 96px;
+  --size: 25px;
+  --hue: 135deg;
+  --circle: 6.6163778212px;
+  --whirl: 9turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(40) {
+  --offsetX: -17vw;
+  --offsetY: 17vh;
+  --offsetZ: 11px;
+  --size: 43px;
+  --hue: 59deg;
+  --circle: 20.0203749275px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(41) {
+  --offsetX: -2vw;
+  --offsetY: 18vh;
+  --offsetZ: 15px;
+  --size: 23px;
+  --hue: 175deg;
+  --circle: 28.0849874136px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(42) {
+  --offsetX: 4vw;
+  --offsetY: -24vh;
+  --offsetZ: 135px;
+  --size: 28px;
+  --hue: 48deg;
+  --circle: 17.6059528239px;
+  --whirl: 9turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(43) {
+  --offsetX: 12vw;
+  --offsetY: -6vh;
+  --offsetZ: -202px;
+  --size: 43px;
+  --hue: 99deg;
+  --circle: -11.4267772621px;
+  --whirl: 5turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(44) {
+  --offsetX: 12vw;
+  --offsetY: 12vh;
+  --offsetZ: 112px;
+  --size: 56px;
+  --hue: 44deg;
+  --circle: -7.6590680662px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(45) {
+  --offsetX: 2vw;
+  --offsetY: 12vh;
+  --offsetZ: 99px;
+  --size: 38px;
+  --hue: 177deg;
+  --circle: -22.7728629797px;
+  --whirl: 8turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(46) {
+  --offsetX: 9vw;
+  --offsetY: -21vh;
+  --offsetZ: -54px;
+  --size: 51px;
+  --hue: 181deg;
+  --circle: -23.920431305px;
+  --whirl: 8turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(47) {
+  --offsetX: 18vw;
+  --offsetY: 22vh;
+  --offsetZ: -195px;
+  --size: 47px;
+  --hue: 220deg;
+  --circle: -7.9420562679px;
+  --whirl: 3turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(48) {
+  --offsetX: 2vw;
+  --offsetY: -14vh;
+  --offsetZ: 204px;
+  --size: 55px;
+  --hue: 298deg;
+  --circle: -5.9381292009px;
+  --whirl: 2turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(49) {
+  --offsetX: 18vw;
+  --offsetY: -3vh;
+  --offsetZ: -53px;
+  --size: 22px;
+  --hue: 310deg;
+  --circle: 12.0713438854px;
+  --whirl: 7turn;
+  opacity: 0;
+}
+.xuanPhao > span:nth-child(50) {
+  --offsetX: 14vw;
+  --offsetY: -2vh;
+  --offsetZ: -19px;
+  --size: 2px;
+  --hue: 326deg;
+  --circle: -3.9252050499px;
+  --whirl: 1turn;
+  opacity: 0;
+}
+
+/* =================== */
+.controls {
+  position: absolute;
+  inset: 0 auto;
+  translate: -50%;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pull_the_trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  padding: 4px 16px;
+  letter-spacing: 3px;
+  color: #b3b339;
+  font-size: x-large;
+  font-weight: 600;
+  z-index: var(--z-index, 1);
+  background: var(--bgr);
+  user-select: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.atom_Bomb:has(#trigger_1:checked) .trigger_2,
+.atom_Bomb:has(#trigger_2:checked) .trigger_3,
+.atom_Bomb:has(#trigger_3:checked) .trigger_4,
+.atom_Bomb:has(#trigger_4:checked) .trigger_1 {
+  --z-index: 9999;
+  --bgr: #000787;
+}
+
+.atom_Bomb .controls .pull_the_trigger:hover {
+  opacity: 0.8;
+  --bgr: #010782 !important;
+  color: #76b339;
+}
+
+.atom_Bomb .controls label.pull_the_trigger:active {
+  color: red !important;
+}
+
+.xuanPhao > span {
+  animation: terrifyExplosion 8s cubic-bezier(0, 1.09, 0.85, 1);
+}
+
+.artillery-fire:active .xuanPhao > span {
+  animation: none;
+}
+
+.atom_Bomb:has(#trigger_1:checked) .xuanPhao > span {
+  --background: url(../img/peachBud.png) no-repeat center / contain;
+  --shoot-direction: 0;
+  --shoot-range: -80vh;
+}
+
+.atom_Bomb:has(#trigger_2:checked) .xuanPhao > span {
+  --shoot-direction: 400px;
+  --shoot-range: -60vh;
+}
+
+.atom_Bomb:has(#trigger_3:checked) .xuanPhao > span {
+  --background: url(../img/HoaMo.png) no-repeat center / contain;
+  --shoot-direction: -400px;
+  --shoot-range: -75vh;
+}
+
+.atom_Bomb:has(#trigger_4:checked) .xuanPhao > span {
+  --shoot-direction: 0;
+  --shoot-range: 2vh;
+}
+
+@keyframes terrifyExplosion {
+  10% {
+    translate: var(--shoot-direction, 0) var(--shoot-range, -55vh);
+    filter: hue-rotate(var(--hue));
+    scale: 0;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    scale: 1;
+    opacity: 0;
+    translate: var(--offsetX) -60vh;
+    filter: hue-rotate(calc(var(--hue) * 26));
+    transform: translateX(calc(var(--offsetX) * 0.2)) translateY(var(--offsetY))
+      translateZ(var(--offsetZ)) rotateX(calc(-1 * var(--whirl)));
+  }
+}
+@keyframes nuclearLaunch {
+  100% {
+    transform: translateY(35vh);
+  }
+}
+.xuanPhao {
+  animation: nuclearLaunch 10s;
+}
+
+/*
+Đây là phần code CSS anh viết bằng SCSS nhé:
+
+@use "sass:math";
+@use "sass:map";
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+.atom_Bomb {
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(16deg, #02000a, #0d0012);
+  background: #000;
+  overflow: hidden;
+
+  perspective: 1000px;
+}
+
+.artillery-fire {
+  position: absolute;
+  inset: auto 0 50px;
+  margin: auto auto 0px auto;
+  width: 2px;
+  height: 2px;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg);
+}
+
+.xuanPhao {
+  position: absolute;
+  inset: 50%;
+  z-index: 9;
+  transform-style: preserve-3d;
+  transform: rotateY(10deg);
+}
+
+@function thuTrang($val) {
+  @return (($val * 0.5) - math.random($val));
+}
+
+.xuanPhao > span {
+  $offsetX: 40vw;
+  $offsetY: 50vh;
+  $offsetZ: 500px;
+
+  $max-width: 60px;
+  $min-width: 20px;
+  $circle: 0.5;
+  $whirl: 10;
+
+  position: absolute;
+  aspect-ratio: 1;
+  width: max(var(--size), $min-width);
+  filter: hue-rotate(var(--hue));
+  border-radius: var(--circle);
+  background: var(--background, url(../img/logpF8.png) no-repeat center / contain);
+  scale: 0.2;
+
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}) {
+      --offsetX: #{thuTrang($offsetX)};
+      --offsetY: #{thuTrang($offsetY)};
+      --offsetZ: #{thuTrang($offsetZ)};
+      --size: #{math.random($max-width)}px;
+      --hue: #{math.random(360)}deg;
+      --circle: #{(math.random() - $circle) * $max-width};
+      --whirl: #{math.random($whirl)}turn;
+      opacity: 0;
+    }
+  }
+}
+
+.controls {
+  position: absolute;
+  inset: 0 auto;
+  translate: -50%;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pull_the_trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  inset: 0;
+  padding: 4px 16px;
+  letter-spacing: 3px;
+  color: #b3b339;
+  font-size: x-large;
+  font-weight: 600;
+
+  z-index: var(--z-index, 1);
+  background: var(--bgr);
+  user-select: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.atom_Bomb:has(#trigger_1:checked) .trigger_2,
+.atom_Bomb:has(#trigger_2:checked) .trigger_3,
+.atom_Bomb:has(#trigger_3:checked) .trigger_4,
+.atom_Bomb:has(#trigger_4:checked) .trigger_1 {
+  --z-index: 9999;
+  --bgr: #000787;
+}
+
+.atom_Bomb .controls .pull_the_trigger:hover {
+  opacity: 0.8;
+  --bgr: #010782 !important;
+  color: #76b339;
+}
+
+.atom_Bomb .controls label.pull_the_trigger:active {
+  color: red !important;
+}
+
+.xuanPhao > span {
+  animation: terrifyExplosion 8s cubic-bezier(0, 1.09, 0.85, 1);
+}
+
+.artillery-fire:active .xuanPhao > span {
+  animation: none;
+}
+
+.atom_Bomb:has(#trigger_1:checked) .xuanPhao > span {
+  --background: url(../img/peachBud.png) no-repeat center / contain;
+  --shoot-direction: 0;
+  --shoot-range: -80vh;
+}
+
+.atom_Bomb:has(#trigger_2:checked) .xuanPhao > span {
+  --shoot-direction: 400px;
+  --shoot-range: -60vh;
+}
+
+.atom_Bomb:has(#trigger_3:checked) .xuanPhao > span {
+  --background: url(../img/HoaMo.png) no-repeat center / contain;
+  --shoot-direction: -400px;
+  --shoot-range: -75vh;
+}
+
+.atom_Bomb:has(#trigger_4:checked) .xuanPhao > span {
+  --shoot-direction: 0;
+  --shoot-range: 2vh;
+}
+
+@keyframes terrifyExplosion {
+  10% {
+    translate: var(--shoot-direction, 0) var(--shoot-range, -55vh);
+    filter: hue-rotate(var(--hue));
+    scale: 0;
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 0;
+    translate: var(--offsetX) -60vh;
+    filter: hue-rotate(calc(var(--hue) * 26));
+    transform: translateX(calc(var(--offsetX) * 0.2)) translateY(var(--offsetY))
+      translateZ(var(--offsetZ)) rotateX(calc(-1 * var(--whirl)));
+  }
+}
+
+@keyframes nuclearLaunch {
+  100% {
+    transform: translateY(35vh);
+  }
+}
+
+.xuanPhao {
+  animation: nuclearLaunch 10s;
+}
+
+*/
